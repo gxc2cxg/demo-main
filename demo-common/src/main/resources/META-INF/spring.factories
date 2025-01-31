@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xuchen.project.common.config.WebMvcConfig, \
+  com.xuchen.project.common.handler.GlobalExceptionHandler, \
+  com.xuchen.project.common.handler.FieldFillHandler
