@@ -18,6 +18,9 @@
         <module>demo-model</module>
         <module>demo-common</module>
         <module>demo-api</module>
+        <module>demo-gateway</module>
+        <module>demo-security</module>
+        <module>demo-work</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

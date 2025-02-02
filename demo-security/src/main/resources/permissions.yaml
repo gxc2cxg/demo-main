@@ -1,0 +1,13 @@
+demo:
+  security:
+    pattern-and-permissions:
+      - /security/permission/**=hasAdmin
+      - /security/role/**=hasAdmin
+      - /security/user/insert=
+      - /security/user/delete=hasAdmin
+      - /security/user/update=hasAdmin,hasCustom,hasMerchant
+      - /security/user/select=hasAdmin
+      - /security/user/bindingRole=accessDenied
+      - /security/user/login=
+      - /security/user/verify=
+      - /security/user/logout=hasAdmin,hasCustom,hasMerchant

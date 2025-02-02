@@ -1,0 +1,34 @@
+server:
+  port: 52810
+spring:
+  application:
+    name: demo-security
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  config:
+    import: classpath:permissions.yaml
+  redis:
+    host: localhost
+    port: 6379
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mapper/**.xml
+security:
+  jwt:
+    alias: security
+    location: classpath:security.jks
+    password: 123456
+    ttl: 120m

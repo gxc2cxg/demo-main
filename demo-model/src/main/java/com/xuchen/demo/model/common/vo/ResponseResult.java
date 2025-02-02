@@ -3,8 +3,10 @@ package com.xuchen.demo.model.common.vo;
 import com.xuchen.demo.model.common.enums.ResponseStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class ResponseResult<T> {
 
