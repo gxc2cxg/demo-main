@@ -21,6 +21,7 @@
         <module>demo-gateway</module>
         <module>demo-security</module>
         <module>demo-work</module>
+        <module>demo-file</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

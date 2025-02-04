@@ -22,9 +22,11 @@ public enum ResponseStatus {
     USER_FROZEN_EXCEPTION(3010, "用户名已冻结"),
     WRONG_PASSWORD_EXCEPTION(3011, "密码错误"),
     USER_NOLOGGING_EXCEPTION(3012, "用户未登录"),
+    PERMISSION_DENIED_EXCEPTION(3013, "没有操作权限"),
 
     DEFAULT_SERVER_EXCEPTION(4000, "默认服务端错误"),
     DATABASE_OPERATION_EXCEPTION(4001, "数据库操作失败"),
+    RABBIT_OPERATION_EXCEPTION(4002, "RabbitMQ操作失败"),
     ;
 
     private final int code;
